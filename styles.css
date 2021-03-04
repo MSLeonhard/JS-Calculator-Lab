@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 50vh;
+    grid-template-columns: repeat(7, 120px);
+    grid-template-rows: minmax(120px, auto)repeat(5, 60px);
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+.grid button {
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 7px;
+    margin: 10px;
+    outline: none;
+    background-color: rgba(223, 225, 229, 1)
+}
+
+.grid button:hover{
+    background-color: rgba(223, 225, 229, .5)
+}
+
+.grid .blue-button {
+    background-color: rgba(66, 133, 244, 1)
+}
+
+.grid .blue-button:hover {
+    background-color: rgba(66, 133, 244, .5)
+}
+
+.grid .light-gray-button {
+    background-color: rgba(241, 243, 244, 1)
+}
+
+.grid .light-gray-button:hover {
+    background-color: rgba(241, 243, 244, .5)
+}
+
+.wide-button{
+    grid-column: span 2;
+}
+
+.screen{
+    grid-column: 1 / -1;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.screen .previous {
+    font-size: 1.5rem;
+}
+
+.screen .current {
+    font-size: 2.5rem;
+}
