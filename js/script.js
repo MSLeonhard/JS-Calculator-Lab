@@ -12,9 +12,53 @@ function solve () {
     document.getElementById('screen').value = solution
 } 
 
+function inverse() {
+    let equation = document.getElementById('screen').value
+    let absolute = eval(Math.abs(equation))
+    document.getElementById('screen').value = absolute
+}
 
+function absoluteValue() {
+    let equation = document.getElementById('screen').value
+    let absolute = eval(Math.abs(equation))
+    document.getElementById('screen').value = absolute
+}
 
+function squareRoot() {
+    let equation = document.getElementById('screen').value
+    let sqrt = eval(Math.sqrt(equation))
+    document.getElementById('screen').value = sqrt
+}
 
+function logarithm () {
+    let equation = document.getElementById('screen').value
+    let log = eval(Math.log10(equation))
+    document.getElementById('screen').value = log
+}
+
+function logNatural () {
+    let equation = document.getElementById('screen').value
+    let ln = eval(Math.log(equation))
+    document.getElementById('screen').value = ln
+}
+
+function cosine () {
+    let equation = document.getElementById('screen').value
+    let cos = eval(Math.cos(equation))
+    document.getElementById('screen').value = cos
+}
+
+function tangent () {
+    let equation = document.getElementById('screen').value
+    let tan = eval(Math.tan(equation))
+    document.getElementById('screen').value = tan
+}
+
+function sine () {
+    let equation = document.getElementById('screen').value
+    let sin = eval(Math.sin(equation))
+    document.getElementById('screen').value = sin
+}
 
 
 
