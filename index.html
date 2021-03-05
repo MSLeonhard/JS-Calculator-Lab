@@ -14,31 +14,31 @@
         <input type="text" id="screen">
         <!--top row of buttons-->
         <button class="wide-button">Rad | Deg</button>
-        <button class="operator">x!</button>
+        <button class="operator" onclick="absoluteValue()">x!</button>
         <button class="number" onclick="display('(')">(</button>
         <button class="number" onclick="display(')')">)</button>
         <button class="operator">%</button>
         <button class="all-clear" onclick="allClear()">AC</button>
         <!--second row of buttons-->
-        <button class="operator">Inv</button>
-        <button class="operator">sin</button>
-        <button class="operator">ln</button>
+        <button class="operator" onclick="inverse()">Inv</button>
+        <button class="operator" onclick="sine()">sin</button>
+        <button class="operator" onclick="logNatural()">ln</button>
         <button class="number light-gray-button" onclick="display('7')">7</button>
         <button class="number light-gray-button" onclick="display('8')">8</button>
         <button class="number light-gray-button" onclick="display('9')">9</button>
         <button class="operator" onclick="display('/')">÷</button>
         <!--third row of buttons-->
         <button>&pi;</button>
-        <button class="operator">cos</button>
-        <button class="operator">log</button>
+        <button class="operator" onclick="cosine()">cos</button>
+        <button class="operator" onclick="logarithm()">log</button>
         <button class="number light-gray-button" onclick="display('4')">4</button>
         <button class="number light-gray-button" onclick="display('5')">5</button>
         <button class="number light-gray-button" onclick="display('6')">6</button>
         <button class="operator" onclick="display('*')">x</button>
         <!--fourth row of buttons-->
         <button class="operator">e</button>
-        <button class="operator">tan</button>
-        <button class="operator">&radic;</button>
+        <button class="operator" onclick="tangent()">tan</button>
+        <button class="operator" onclick="squareRoot()">&radic;</button>
         <button class="number light-gray-button" onclick="display('1')">1</button>
         <button class="number light-gray-button" onclick="display('2')">2</button>
         <button class="number light-gray-button" onclick="display('3')">3</button>
